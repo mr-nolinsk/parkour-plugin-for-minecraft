@@ -1,0 +1,20 @@
+name: ParkourPlugin
+version: '1.0.0'
+main: com.parkourmod.plugin.ParkourPlugin
+api-version: '1.21'
+description: Серверная реализация части паркур-механик (адаптация клиентского Fabric-мода parkourmod) для Paper.
+author: ParkourMod
+
+commands:
+  parkour:
+    description: Включить/выключить паркур-режим или перезагрузить конфиг.
+    usage: "/parkour [reload]"
+    aliases: [pk]
+
+permissions:
+  parkourmod.use:
+    description: Разрешает использовать паркур-режим.
+    default: true
+  parkourmod.reload:
+    description: Разрешает перезагружать конфиг плагина.
+    default: op
