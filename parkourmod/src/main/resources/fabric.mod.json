@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "parkourmod",
+  "version": "${version}",
+  "name": "Parkour Mod",
+  "description": "Паркур-режим: прыжки от стен, фиксация на стене, лазание на уступы, бег по стенам, разбег и динамичная камера.",
+  "authors": [
+    "you"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.parkourmod.ParkourMod"
+    ],
+    "modmenu": [
+      "com.parkourmod.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "parkourmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "icon": "assets/parkourmod/icon.png",
+  "suggests": {
+    "modmenu": ">=17.0.0",
+    "cloth-config": ">=21.11.153"
+  }
+}
